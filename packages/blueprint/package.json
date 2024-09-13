@@ -1,0 +1,21 @@
+{
+    "name": "@cmmv/blueprint",
+    "version": "0.0.1",
+    "description": "CMMV (@blueprint)",
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/andrehrferreira/cmmv-blueprint.git"
+    },
+    "author": "Andre Ferreira",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/andrehrferreira/cmmv-blueprint/issues"
+    },
+    "homepage": "https://cmmv.io",
+    "dependencies": {
+        "@cmmv/core": "^0.3.3"
+    }
+}

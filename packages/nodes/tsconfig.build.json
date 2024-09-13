@@ -1,0 +1,15 @@
+{
+    "extends": "../tsconfig.build.json",
+    "compilerOptions": {
+        "outDir": ".",
+        "rootDir": ".",
+        "paths": {
+            "@cmmv/blueprint": ["../blueprint"],
+            "@cmmv/blueprint/*": ["../blueprint/*"]
+        }
+    },
+    "exclude": ["node_modules", "dist"],
+    "references": [
+        { "path": "../blueprint/tsconfig.build.json" }
+    ]
+}

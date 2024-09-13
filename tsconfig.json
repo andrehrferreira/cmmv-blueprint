@@ -30,8 +30,12 @@
         "types": ["node", "mocha"],
         "paths": {
             "*": ["node_modules/*", "packages/*"],
-            "@cmmv/blueprint": ["src"],
-            "@cmmv/blueprint/*": ["src/*"],
+            "@cmmv/blueprint": ["packages/blueprint"],
+            "@cmmv/blueprint/*": ["packages/blueprint/*"],
+            "@cmmv/nodes": ["packages/nodes"],
+            "@cmmv/nodes/*": ["packages/nodes/*"],
+            "@cmmv/editor": ["packages/editor"],
+            "@cmmv/editor/*": ["packages/editor/*"]
         }
     },
     "include": ["packages/**/*", "src/**/*.ts"],

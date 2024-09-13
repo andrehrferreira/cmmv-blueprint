@@ -1,0 +1,7 @@
+{
+    "files": [],
+    "references": [
+        { "path": "./blueprint/tsconfig.build.json" },
+        { "path": "./nodes/tsconfig.build.json" },
+    ]
+}
