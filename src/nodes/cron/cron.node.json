@@ -1,0 +1,7 @@
+{
+    "namespace": "cmmv.cron",
+    "version": "1.0",
+    "description": "",
+    "categories": ["Core Nodes"],
+    "alias": ["Time", "Scheduler", "Cron", "Interval"]
+}

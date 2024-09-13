@@ -1,0 +1,47 @@
+{
+    "name": "BP_Test",
+    "imports": { 
+        "Convert": { 
+            "module": "@cmmv/blueprint", 
+            "deconstructor": true 
+        }  
+    },
+    "beginplay": {
+        "next": "generateHash"
+    },
+    "functions": [
+        { 
+            "name": "generateHash",
+            "next": "cronNode",
+            "localVariables": [
+                { 
+                    "name": "tmpHash", 
+                    "type": "string",
+                    "defaultValue": "" 
+                }
+            ],
+            "graph": [
+                { 
+                    "name": "cryptNode", 
+                    "node": "crypto",
+                    "link": [
+                        { 
+                            "node": "generateHash", 
+                            "property": "tmpHash", 
+                            "nodeTo": "cryptNode",
+                            "to": "result",
+                            "fn": "Convert.IntToString" 
+                        }
+                    ] 
+                }
+            ],
+            "outputs": [
+                { 
+                    "name": "result", 
+                    "node": "generateHash", 
+                    "property": "tmpHash" 
+                }
+            ] 
+        }
+    ]
+}

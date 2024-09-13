@@ -1,0 +1,14 @@
+{
+    "name": "AppInstance",
+    "extends": "Instance",
+    "imports": {
+        "Instance": { "module": "@cmmv/blueprint", "deconstructor": true }
+    },
+    "variables": [
+        { 
+            "name": "api", 
+            "type": "string", 
+            "value": "http://localhost:3000" 
+        }
+    ]
+}

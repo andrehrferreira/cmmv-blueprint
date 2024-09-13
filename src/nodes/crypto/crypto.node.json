@@ -1,0 +1,70 @@
+{
+    "namespace": "node.crypto",
+    "version": "1.0",
+    "description": "",
+    "categories": ["Core Crypto"],
+    "alias": ["Crypto", "RSA", "AES", "DSA"],
+    "properties": [
+        {
+            "displayName": "Action",
+            "name": "action",
+            "type": "options",
+            "default": "hash",
+            "options": [
+
+            ]
+        }
+    ],
+    "actions": [
+        { 
+            "name": "generate", 
+            "value": "generate",
+            "description": "Generate random string"
+        },
+        { 
+            "name": "hash", 
+            "value": "hash",
+            "description": "Hash a text or file in a specified format"
+        },
+        { 
+            "name": "hmac", 
+            "value": "hmac",
+            "description": "HMAC a text or file in a specified format" 
+        },
+        { 
+            "name": "sign", 
+            "value": "sign",
+            "description": "Sign a string using a private key"  
+        }
+    ],
+    "types": [
+        { "name": "md5", "value": "md5" },
+        { "name": "sha1", "value": "sha1" },
+        { "name": "sha256", "value": "sha256" },
+        { "name": "SHA3-256", "value": "SHA3-256" },
+        { "name": "SHA3-384", "value": "SHA3-384" },
+        { "name": "SHA3-512", "value": "SHA3-512" },
+        { "name": "sha384", "value": "sha384" },
+        { "name": "sha512", "value": "sha512" }
+    ],
+    "encodings": [
+        { "name": "hex", "value": "hex" },
+        { "name": "base64", "value": "base64" }
+    ],
+    "keyTypes": [
+        { "name": "rsa", "value": "rsa" },
+        { "name": "rsa-pss", "value": "rsa-pss" },
+        { "name": "dsa", "value": "dsa" },
+        { "name": "ec", "value": "ec" },
+        { "name": "ed25519", "value": "ed25519" },
+        { "name": "ed448", "value": "ed448" },
+        { "name": "x25519", "value": "x25519" },
+        { "name": "x448", "value": "x448" },
+        { "name": "dh", "value": "dh" }
+    ],
+    "generateEncodingType": [
+        { "name": "uuid", "value": "uuid" },
+        { "name": "base64", "value": "base64" },
+        { "name": "buffer", "value": "buffer" }
+    ]
+}
